@@ -1,0 +1,18 @@
+dictionary = {'Кеннет Юджин Айверсон': 'APL','Джон Бэкус': 'Fortran',
+              'Уолтер Брайт': 'C++', 'Роберту Иерузалимски':'LUA',
+              'Томас Курц':'ADA','Джеймс Лайон':'INTERCAL',
+              'Джон Маккарти':'LISP','Юкихиро Мацумото':'Ruby',
+              'Сеймур Пейперт':'Logo','Дон Сайм':'F#'}
+question=int(input('Сортировать список ключей или нет?(1 = Сортировать/ 0 = Не сортировать): '))
+if question==1:
+    list_keys = list(dictionary.keys())
+    list_keys.sort()
+    for i in list_keys:
+        print(i)
+if question==0:
+    list_keys = list(dictionary.keys())
+    for i in list_keys:
+        print(i)
+
+a=input('Введи имя создателя: ')
+print('Создатель языка программирования ' + dictionary.get(a))
